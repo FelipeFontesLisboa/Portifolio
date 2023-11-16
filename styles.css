@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+/* Main Prencipal */
+.hero-container {  
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('./assets/nubelson-fernandes-iE71-TMrrkE-unsplash \(1\).jpg');
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+h1.typewriter {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    }
+nav {
+    width: 50%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 700px;
+}
+
+li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    color: #fff;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #D870DB;
+}
+a {
+
+    list-style: none;
+    text-decoration:none;
+}
+
+.arrows {
+    width: 60px;
+    height: 172px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+    animation-delay:  -1s;
+    -webkit-animation-delay:  -0.9s;
+}
+
+.arrows path.a2 {
+    animation-delay:  -0.5s;
+    -webkit-animation-delay:  -0.3s;
+}
+
+.arrows path.a3 {
+    animation-delay:  -0s;
+    -webkit-animation-delay:  -0.1s;
+}
+/*=---------------------------------------------- sobre o autor sinops------------------------------- */
+.content-container {
+    width:auto ;
+    height: auto;
+    
+}
+.profile-container{
+    color: #ffffff;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(./assets/akin-cakiner-xKBmqz66gEs-unsplash.jpg);
+    justify-content: center;
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profile-content {
+    width: auto;
+    height: auto;
+}
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border: 2px solid  rgba(255, 255, 255, .5) ;
+    border-radius: 15px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #333 ;
+} 
+.name-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    margin-top: 15px;
+
+}
+.profile-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    width: 80%;
+    margin: 10px;
+}
+.profile-button {
+    width: 160px;
+    height: 50px;
+    border-radius:15px ;
+    border: none;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: large;
+    box-shadow:
+    0 0 5px cyan,
+    0 0 25px cyan;
+}
+.profile-button:hover {
+    box-shadow:
+    0 0 5px cyan,
+    0 0 25px cyan,
+    0 0 50px cyan,
+    0 0 100px cyan, 
+    0 0 200px cyan;
+}
+.divider{
+    width: 100%;
+    border-top: .5px solid #bfbfbf;
+    margin: 15px 0 ;
+}
+
+.icons-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.icon-item {
+    width: 80px;
+    height: auto;
+}
+.profile-sinopse {
+    display: flex;
+    max-width: 430px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    padding-left:70px ;
+}
+.icons-container .icon-item {
+    cursor: pointer;
+}
+
+.Modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 350px;;
+    height:350px;
+    border-radius: 10px;
+    padding: 15px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    background-color:rgb(255, 255, 255);
+    position:fixed; 
+    top:30%; 
+    left: 40%;
+ }
+
+/*<!-----------------------------------------------------tecnology container------------------------------------------->*/
+.tecnology-container{
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-image: url(./assets/pexels-tima-miroshnichenko-5380594.jpg);
+    justify-content:center;
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tecnology-content{
+    width: 90%;
+    height: auto;
+    font-size: 4rem;
+    align-items: center;
+    text-align: center;
+}
+.tecnology-card-container{
+    width: 100%;
+    height: 100%;
+}
+.icon-tecnology{
+    width:200px ;
+    height: 170px;
+    
+}
+/* =----------------------------------------------------container project--------------------------------------------------*/
+ .project-container{
+    width:auto;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/img\ de\ projectbg.jpg);
+    background-attachment: fixed;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project-content{
+    width: 90%;
+    height:auto;
+    display: grid;
+    grid-template-rows:repeat(1fr, 4) ;
+ }
+ .position-container{
+    width: auto;
+    height: auto;
+    display: flex;
+    padding: 15px 0px 15px 0px;
+ }
+ .right {
+    justify-content: flex-end;
+    width: auto;
+    height: auto;
+ }
+ .left {
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+ }
+ .project-card{
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    box-shadow: 10px 10px 5px black; 
+    border-radius: 8px;
+ }
+
+ .card-reverse { 
+    flex-direction:row-reverse ;
+}
+
+.project-image {
+    max-width: 250px;
+    min-height: 140px;
+    position: relative;
+    border-radius: 8px;
+    right: 15px;
+    top: 20px;
+    transition: 0.9s;
+}
+.project-image:hover {
+    transform: scale(1.09);
+}
+
+.image-reverse { 
+    max-width: 260px;
+    max-height: 140px;
+    border-radius: 8px;
+    left: 35px;
+    padding: 10px;
+}
+
+.project-text {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    margin: 5px;
+}
+
+/* ---------------------container footer -------------------------------------*/
+.footer-principal {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+.footer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-image: url(./assets/Img-footer.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    background: url(./assets/Img-footer.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.left-container {
+    width: 33.3%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    display: flex;
+    font-size:18px;
+}
+
+.left-container .content-midia {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.span1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.left-container .content-midia .social-midia {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+
+.left-container .content-midia p {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+}
+
+
+.left-container .content-midia .social-midia a {
+    align-items: center;
+    cursor: pointer;
+}
+
+a i {
+    color: #fff;
+    margin: 5px;
+    font-size: 2rem;
+    
+    
+
+}
+/*------------------------------------------*/
+
+.center-container {
+    width: 33.3%;
+    height: auto;
+    color: rgb(192, 192, 192);
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+.place-anddress {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+.info {
+ 
+    padding: 20px 0px 20px 0px;
+}
+
+.center-content {
+    margin: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/* ------------------------------------*/
+
+.container-right {
+    width: 33.3%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    display: flex;
+
+}
+.container-contact {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;  
+}
+form.formulario {
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-group-1 {
+    margin: 10px;
+}
+.form-control{
+    width: auto;
+    font-size: medium;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.form-group-textarea{
+    width: auto;
+    height: auto;
+    
+}
+.form-control-textarea{
+    padding: 5px;
+    width: 100%;
+    height: 80px;
+    font-size:  large;
+}
+button.submit {
+    width: 100px;
+    padding: 2px;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 10px;
+ background-color: rgba(255, 0, 0, 0.541);
+    color: white;
+}
+
+
+
+
+
+
