@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
+html {
+    scroll-behavior: smooth !important;
+}
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
 }
-
 
 /* Main Prencipal */
 .hero-container {  
