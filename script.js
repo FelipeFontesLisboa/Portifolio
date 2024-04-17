@@ -5,13 +5,13 @@ var typewriter = new Typewriter(app, {
   loop: true
 });
 
-typewriter.typeString('Procurando um desenvolvedor FrontEnd ?')
+typewriter.typeString('Looking for a FrontEnd developer?')
   .pauseFor(2500)
   .deleteAll()
-  .typeString('Aqui estão Alguns de meus Projetos. ')
+  .typeString('Here are some of my Projects. ')
   .pauseFor(2500)
   .deleteChars(10)
-  .typeString('Fiquem a vontade.')
+  .typeString('Make yourself comfortable.')
   .start();
 
 //togle Modal

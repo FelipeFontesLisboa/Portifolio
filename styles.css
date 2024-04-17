@@ -56,7 +56,7 @@ li {
 }
 li:hover {
   color: #ffffff;
-text-shadow:2px 5px 4px rgb(255, 255, 255);
+  text-shadow: 2px 5px 4px rgb(255, 255, 255);
 }
 
 a {
