@@ -1,17 +1,18 @@
 //tipyng efect
-var app = document.getElementById('typewriter');
+var app = document.getElementById("typewriter");
 
 var typewriter = new Typewriter(app, {
-  loop: true
+  loop: true,
 });
 
-typewriter.typeString('Looking for a FrontEnd developer?')
+typewriter
+  .typeString("Procurando Um Desenvolvedor FrontEnd?")
   .pauseFor(2500)
   .deleteAll()
-  .typeString('Here are some of my Projects. ')
+  .typeString("Aqui estão alguns projetos. ")
   .pauseFor(2500)
   .deleteChars(10)
-  .typeString('Make yourself comfortable.')
+  .typeString("Sinta-se confortável.")
   .start();
 
 //togle Modal
@@ -23,4 +24,3 @@ function toggleP() {
     p.style.display = "block";
   }
 }
-
