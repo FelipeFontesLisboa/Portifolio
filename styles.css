@@ -29,6 +29,13 @@ html {
   background-size: cover;
 }
 
+.buttonMenu-lateral{
+  display: none;
+}
+.menu-lateral {
+  display: none;
+}
+
 h1.typewriter {
   display: block;
   color: #fff;
@@ -150,16 +157,16 @@ a {
   width: 350px;
   background: transparent;
   backdrop-filter: blur(15px);
-  padding: 30px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.884);
   border-radius: 15px;
+  padding: 30px;
 }
 
 .profile-image {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 4px solid #333;
+  border: 4px solid #ffffffd7;
 }
 .name-text {
   font-size: 21px;
@@ -273,6 +280,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 .project-content {
   width: 90%;

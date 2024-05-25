@@ -1,7 +1,7 @@
 //tipyng efect
-var app = document.getElementById("typewriter");
+const app = document.getElementById("typewriter");
 
-var typewriter = new Typewriter(app, {
+const typewriter = new Typewriter(app, {
   loop: true,
 });
 
@@ -24,3 +24,13 @@ function toggleP() {
     p.style.display = "block";
   }
 }
+
+const buttonMenuLateral = document.querySelector('.buttonMenu-lateral');
+const menuLateral = document.querySelector('.menu-lateral');
+
+function showMenuLateral() {
+  menuLateral.classList.toggle('ativo');  // Corrigido: 'ativo' em vez de '.ativo'
+}
+
+buttonMenuLateral.addEventListener('click', showMenuLateral);
+
