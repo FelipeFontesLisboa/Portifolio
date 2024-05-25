@@ -13,6 +13,9 @@
     color: whitesmoke;
     border: none;
     z-index: +2;
+    cursor: pointer;
+    margin-right: 20px;
+  
   }
   .menu-lateral.ativo {
     right: -1%;
@@ -25,12 +28,12 @@
     position: fixed;
     z-index:1;
     top: -1%;
-    right:-55%;
+    right:-60%;
     background: transparent;
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.884);
     border-radius: 0px 0px 0px 15px;
-    width: 50%;
+    width: 60%;
     height:80%;
     transition: 1s;
     animation-duration: 5s;
