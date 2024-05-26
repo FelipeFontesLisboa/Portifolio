@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-html {
-  scroll-behavior: smooth !important;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +8,7 @@ html {
   font-family: "Oswald", sans-serif;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  overflow-x: ;
 }
 .visitantes {
   display: ;
@@ -18,6 +17,7 @@ html {
 /* Main Prencipal */
 .hero-container {
   height: 100vh;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,6 +137,7 @@ a {
 .profile-container {
   color: #ffffff;
   height: 100vh;
+  max-width: 100%;
   display: flex;
   align-items: center;
   background-image: url(./assets/akin-cakiner-xKBmqz66gEs-unsplash.jpg);
@@ -210,7 +211,6 @@ a {
   height: auto;
 }
 .profile-sinopse {
-  display: flex;
   max-width: 430px;
   color: #fff;
   font-size: 1.2rem;
@@ -241,7 +241,7 @@ a {
 /*<!-----------------------------------------------------tecnology container------------------------------------------->*/
 .tecnology-container {
   color: #ffffff;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: flex;
   padding: 50px;
@@ -270,7 +270,7 @@ a {
 }
 /* =----------------------------------------------------container project--------------------------------------------------*/
 .project-container {
-  width: auto;
+  max-width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -345,13 +345,8 @@ a {
 }
 
 /* ---------------------container footer -------------------------------------*/
-.footer-principal {
-  display: flex;
-  width: auto;
-  height: auto;
-}
 .footer-container {
-  width: 100%;
+  max-width: 100%;
   height: 400px;
   display: flex;
   background-image: url(./assets/Img-footer.jpg);
@@ -363,9 +358,10 @@ a {
 }
 
 .container {
-  width: 90%;
+  max-width: 95%;
   height: 300px;
   display: flex;
+  color: #fff;
   background: url(./assets/Img-footer.jpg);
   background-position: 50% 50%;
   background-size: cover;
@@ -377,23 +373,19 @@ a {
 .left-container {
   width: 33.3%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   background: transparent;
   backdrop-filter: blur(15px);
   border-radius: 30px;
-  display: flex;
   font-size: 18px;
 }
 
-.left-container .content-midia {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .span1 {
+
   color: #ffffff;
   font-size: 1.5rem;
 }
@@ -430,36 +422,22 @@ i:hover {
 /*------------------------------------------*/
 
 .center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+  font-size: 13px;
   width: 33.3%;
   height: auto;
   color: rgb(192, 192, 192);
   background: transparent;
   backdrop-filter: blur(15px);
   border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
 }
-.place-anddress {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-.info {
-  padding: 20px 0px 20px 0px;
-}
+
 .info a {
   font-size: 20px;
   color: #9c9b9b;
-}
-
-.center-content {
-  margin: 20px;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
 }
 
 /* ------------------------------------*/
@@ -471,15 +449,11 @@ i:hover {
   backdrop-filter: blur(15px);
   border-radius: 30px;
   display: flex;
-}
-.container-contact {
-  height: 100%;
-  width: 100%;
-  display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
 }
+
 form.formulario {
   width: 100%;
   display: flex;
@@ -490,7 +464,7 @@ form.formulario {
   margin: 10px;
 }
 .form-control {
-  width: auto;
+  width:auto;
   font-size: medium;
   margin: 5px;
   padding: 5px;
@@ -504,6 +478,7 @@ form.formulario {
   padding: 5px;
   width: 100%;
   height: 80px;
+  border-radius: 5px;
   font-size: large;
 }
 button.submit {
@@ -515,4 +490,151 @@ button.submit {
   border-radius: 10px;
   background-color: rgba(255, 0, 0, 0.541);
   color: white;
+}
+
+/* ----------------------------------------------MEDIA QUERIE */
+@media (max-width: 768px) {  
+
+  header {
+    display: none;
+  }
+
+  .buttonMenu-lateral {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    color: whitesmoke;
+    border: none;
+    z-index: +2;
+    cursor: pointer;
+    margin: 20px 20px 0px 0px;
+  }
+
+  .menu-lateral.ativo {
+    right: 0%;
+  }
+
+  .menu-lateral{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: fixed;
+    z-index:1;
+    top: 0%;
+    right:-60%;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.884);
+    border-radius: 0px 0px 0px 15px;
+    width: 60%;
+    height:80%;
+    transition: 1s;
+    animation-duration: 5s;
+    box-shadow: 1px 5px 10px 2px  rgba(255, 255, 255, 0.116);
+  }
+
+  .hero-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
+
+  #typewriter {
+    font-size: 2.5rem;
+  }
+
+  .arrows {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .sinops-tecnologias{
+    font-size: 2.5rem;
+  }
+  .tecnology-content{
+    width: 100%;
+  }
+  .icon-tecnology{
+    width: 150px;
+    height: 140px;
+  }
+  .projetct-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .right{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  }
+  .card-reverse{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .left{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-card{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+.project-text{
+  padding-top: 30px;
+}
+  .profile-container {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.profile-sinopse {
+  display: none;
+}
+.footer-container{
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+ width: auto;
+ height: auto;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.left-container{ 
+  display: none;
+}
+
+.center-container {
+  display: none;
+}
+
+
+.container-right{
+ width: 350px;
+ height: 380px;
+ justify-content:;
+}
+
 }
