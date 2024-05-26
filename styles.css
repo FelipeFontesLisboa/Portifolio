@@ -514,7 +514,7 @@ button.submit {
   }
 
   .menu-lateral.ativo {
-    right: 0%;
+    right: -1%;
   }
 
   .menu-lateral{
@@ -524,7 +524,7 @@ button.submit {
     flex-direction: column;
     position: fixed;
     z-index:1;
-    top: 0%;
+    top: -1%;
     right:-60%;
     background: transparent;
     backdrop-filter: blur(15px);
@@ -541,7 +541,6 @@ button.submit {
     align-items: center;
     justify-content: center;
     text-align: center;
-    display: flex;
   }
 
   #typewriter {

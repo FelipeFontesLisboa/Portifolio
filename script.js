@@ -5,6 +5,7 @@ const typewriter = new Typewriter(app, {
   loop: true,
 });
 
+//digitação
 typewriter
   .typeString("Procurando Um Desenvolvedor FrontEnd?")
   .pauseFor(2500)
@@ -25,12 +26,12 @@ function toggleP() {
   }
 }
 
+//sidbar
 const buttonMenuLateral = document.querySelector('.buttonMenu-lateral');
 const menuLateral = document.querySelector('.menu-lateral');
 
 function showMenuLateral() {
-  menuLateral.classList.toggle('ativo');  // Corrigido: 'ativo' em vez de '.ativo'
+  menuLateral.classList.toggle('ativo');
 }
 
 buttonMenuLateral.addEventListener('click', showMenuLateral);
-
