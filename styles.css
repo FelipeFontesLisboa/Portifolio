@@ -8,12 +8,10 @@
   font-family: "Oswald", sans-serif;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  overflow-x: ;
 }
-.visitantes {
-  display: ;
+body{
+  background-color: black;
 }
-
 /* Main Prencipal */
 .hero-container {
   height: 100vh;
@@ -232,8 +230,9 @@ a {
   color: black;
   font-size: 1.2rem;
   background-color: rgb(255, 255, 255);
-  box-shadow: 20px 20px 100px 15px rgb(255, 255, 255);
+  box-shadow: 1px 1px 100px 1px rgb(255, 255, 255);
   position: fixed;
+  z-index: +1;
   top: 30%;
   left: 40%;
 }
@@ -629,12 +628,17 @@ align-items: center;
 .center-container {
   display: none;
 }
-
-
 .container-right{
  width: 350px;
  height: 380px;
- justify-content:;
+ justify-content:center;
+}
+
+.Modal{
+  width: auto;
+  height: auto;
+  top: 10%;
+  left: 0%;
 }
 
 }
