@@ -25,7 +25,8 @@ img {
   justify-content: space-between;
   background-image: url("./assets/nubelson-fernandes-iE71-TMrrkE-unsplash \(1\).jpg");
   background-attachment: fixed;
-  background-position: 50%;
+  background-position: 50% 50%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
