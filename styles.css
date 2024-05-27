@@ -526,8 +526,7 @@ button.submit {
     z-index:1;
     top: -1%;
     right:-60%;
-    background: rgba(255, 255, 255, 0.103);
-    backdrop-filter: blur(15px);
+    background: rgba(0, 0, 0, 0.925);
     border: 1px solid rgba(255, 255, 255, 0.884);
     border-radius: 0px 0px 0px 15px;
     width: 60%;
