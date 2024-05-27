@@ -12,16 +12,20 @@
 body{
   background-color: black;
 }
+img {
+/*evita de estourar as img e ja ficam resposiveis logo de cara */
+  max-width: 100%;
+}
 /* Main Prencipal */
 .hero-container {
   height: 100vh;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   background-image: url("./assets/nubelson-fernandes-iE71-TMrrkE-unsplash \(1\).jpg");
   background-attachment: fixed;
+  background-position: 50% 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -490,6 +494,9 @@ button.submit {
   background-color: rgba(255, 0, 0, 0.541);
   color: white;
 }
+.socialMobile {
+  display: none;
+}
 
 /* ----------------------------------------------MEDIA QUERIE */
 @media (max-width: 768px) {  
@@ -637,6 +644,11 @@ align-items: center;
   height: auto;
   top: 10%;
   left: 0%;
+}
+
+.socialMobile {
+  display: block;
+  margin-top: 20px;
 }
 
 }
