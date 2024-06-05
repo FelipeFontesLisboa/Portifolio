@@ -13,7 +13,7 @@ body{
   background-color: black;
 }
 img {
-/*evita de estourar as img e ja ficam resposiveis logo de cara */
+
   max-width: 100%;
 }
 /* Main Prencipal */
@@ -22,7 +22,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-image: url("./assets/nubelson-fernandes-iE71-TMrrkE-unsplash \(1\).jpg");
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -31,21 +31,20 @@ img {
   background-size: cover;
 }
 
-.buttonMenu-lateral{
-  display: none;
-}
-.menu-lateral {
-  display: none;
-}
 
-h1.typewriter {
-  display: block;
-  color: #fff;
-  font-size: 4rem;
-  font-weight: 700;
-}
 nav {
   width: 100%;
+  height: 80px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  transition: 0.4s;
+}
+nav.ativo {
+  background: linear-gradient(#000000, #2A282D);
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.205);
 }
 
 ul {
@@ -72,11 +71,27 @@ a {
   list-style: none;
   text-decoration: none;
 }
+.buttonMenu-lateral{
+  display: none;
+}
+.menu-lateral {
+  display: none;
+}
+.buttonRemoveMenu{
+  display: none;
+}
+h1.typewriter {
+  display: block;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+}
 
 .arrows {
-  width: 60px;
+  display: flex;
+  width: 70px;
   height: 172px;
-  bottom: 20px;
+  bottom:100px
 }
 
 .arrows path {
@@ -521,10 +536,25 @@ button.submit {
     margin: 20px 20px 0px 0px;
   }
 
-  .menu-lateral.ativo {
-    right: -1%;
+  .buttonRemoveMenu{
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    top: -0%;
+    right: -100%;
+    position: fixed;
+    z-index: +1;
   }
 
+ .buttonRemoveMenu.ativo{
+  right: 0%;
+ }
+
+  .menu-lateral.ativo{
+    right: -1%;
+  }
   .menu-lateral{
     display:flex;
     align-items: center;
@@ -534,7 +564,7 @@ button.submit {
     z-index:1;
     top: -1%;
     right:-60%;
-    background: rgba(0, 0, 0, 0.925);
+    background: rgba(0, 0, 0, 0.795);
     border: 1px solid rgba(255, 255, 255, 0.884);
     border-radius: 0px 0px 0px 15px;
     width: 60%;
@@ -576,9 +606,9 @@ button.submit {
     justify-content: center;
   }
   .right{
-flex-direction: column;
-justify-content: center;
-align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
   }
   .card-reverse{
     width: auto;

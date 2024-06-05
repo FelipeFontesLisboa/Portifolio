@@ -26,12 +26,40 @@ function toggleP() {
   }
 }
 
-//sidbar
-const buttonMenuLateral = document.querySelector('.buttonMenu-lateral');
-const menuLateral = document.querySelector('.menu-lateral');
+function initMenuHmburguer() {
+  const buttonMenuLateral = document.querySelector('.buttonMenu-lateral');
+  const menuLateral = document.querySelector('.menu-lateral');
+  const buttonRemoveMenu = document.querySelector('.buttonRemoveMenu')
 
 function showMenuLateral() {
   menuLateral.classList.toggle('ativo');
+  buttonRemoveMenu.classList.toggle('ativo')
 }
 
+buttonRemoveMenu.addEventListener('click',showMenuLateral)
 buttonMenuLateral.addEventListener('click', showMenuLateral);
+}
+initMenuHmburguer()
+
+
+function initAnimationScrol() {
+  
+
+const nav = document.querySelector('nav');
+const firstContainer = document.querySelector('.hero-container'); 
+
+
+function activateNav() {
+
+  const containerBottom = firstContainer.getBoundingClientRect().bottom;
+  const isPastContainer = containerBottom <= 80;
+  
+  if (isPastContainer) {
+    nav.classList.add('ativo');
+  } else {
+    nav.classList.remove('ativo');
+  }
+}
+window.addEventListener('scroll', activateNav);
+}
+initAnimationScrol()
